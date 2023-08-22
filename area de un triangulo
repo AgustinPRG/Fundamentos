@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float altura,base,area;
+std::cout << "ingrese la base" << std::endl;
+std::cin >>base ;
+std::cout << "ingrese la altura" << std::endl;
+std::cin >>altura;
+area=base*altura/2;
+std::cout << "el area del triangulo es:.."<<area << std::endl;
+}
