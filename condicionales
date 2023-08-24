@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float creditos;
+    cout<<"ingresar el numero de creditos:...";
+    cin>>creditos;
+    if (creditos>60)
+        cout<<"No puede inscribir mas materias";
+    else
+        cout<<"Podes inscribirte";
+
+    return 0;
+}
