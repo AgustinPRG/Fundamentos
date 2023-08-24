@@ -1,0 +1,25 @@
+#include <iostream>
+#include "math.h"
+using namespace std;
+
+int main()
+{
+    float area,a,b,c,s;
+    cout<<"Ingrese el lado a: ";
+    cin>>a;
+    cout<<"Ingrese el lado b: ";
+    cin>>b;
+    cout<<"Ingrese el lado c: ";
+    cin>>c;
+    if ((a>0)&&(b>0)&&(c>0))
+        {   s=(a+b+c)/2;
+            area= sqrt(s*(s-a)*(s-b)*(s-c));
+            cout<<"El area del triangulo es: "<<area;
+        }
+    else 
+        cout<<"no se puede calcular";
+        
+    
+    
+    return 0;
+}
