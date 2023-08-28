@@ -1,0 +1,43 @@
+/* Un programa que permita ingresar 3 numero por teclado y determine cual es el menor*/
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   float numero1,numero2,numero3;//variables de entrada
+   int menor;//variable de salida
+   cout<<"****PROGRAMA QUE DETERMINA EL MENOR DE TRES NUMEROS****"<<endl<<endl;
+   cout<<"Ingrese los tres valores a operar"<<endl;
+   cin>>numero1>>numero2>>numero3;//Otra forma de sintaxis en c++
+   if (numero1<=numero2 && numero1<=numero3)
+   {
+       menor=numero1;
+   }
+   else
+   {
+       if (numero2<=numero1 && numero2<=numero3)
+       {
+           menor=numero2;
+       }
+       else
+       {
+           if(numero3<=numero1 && numero3<=numero2)
+           {
+               menor=numero3;
+           }
+           else
+           {
+
+           }
+       }
+   }
+cout<<"Ingresaron los siguientes valores: "<<numero1<<"   "<<numero2<<"   "<<numero3<<endl;
+cout<<"El menor de los numeros ingresados es: "<<menor<<endl;
+
+
+
+    return 0;
+}
