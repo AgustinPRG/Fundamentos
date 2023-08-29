@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int promedio,dato1,dato2,dato3;
+    cout<<"Ingresar el primer dato:"<<endl;
+    cin>>dato1;
+    if ((dato1>=0)&&(dato1<=10))
+    {
+        cout<<"Ingresar el segundo dato: "<<endl;
+        cin>>dato2;
+        if ((dato2>=0)&&(dato2<=10))
+        {
+            cout<<"Ingresar el tercer dato: "<<endl;
+            cin>>dato3;
+            if ((dato3>=0)&&(dato3<=10))
+            {
+                promedio=(dato1+dato2+dato3)/3.0;
+                cout<<"El promedio es: "<<endl<<promedio;
+            }
+            else 
+            {
+                cout<<"No ingreso bien los datos";
+            }
+        }
+        else
+        {
+            cout<<"No ingreso bien los datos";
+        }
+    }
+    else
+    {
+        cout<<"No ingreso bien los datos";
+    }
+    
+    return 0;
+}
