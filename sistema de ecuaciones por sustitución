@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a,b,c,d,e,f,x,y;
+    cout<<"***Calculo de un sistema de ecuaciones de dos variables usando el metodo de sustitucion***"<<endl;
+    cout<<"Ingrese el dato de a: "<<endl;
+    cin>>a;
+    cout<<"Ingrese el dato de b: "<<endl;
+    cin>>b;
+    cout<<"Ingrese el dato de c: "<<endl;
+    cin>>c;
+    cout<<"Ingrese el dato d: "<<endl;
+    cin>>d;
+    cout<<"Ingrese el dato de e"<<endl;
+    cin>>e;
+    cout<<"Ingrese el dato de f: "<<endl;
+    cin>>f;
+    y=(a*f-c*d)/(e*a-b*d);
+    x=(c-b*y)/a;
+    cout<<"El resultado de X es: "<<x<<endl;
+    cout<<"El resultado de y es: "<<y<<endl;
+    
+    
+    return 0;
+}
