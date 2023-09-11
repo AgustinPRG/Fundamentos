@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float presupuesto,presupuesto1,presupuesto2,presupuesto3;
+    cout<<"Calculo de presupuesto correspondiente a cada area"<<endl;
+    cout<<"Introducir el presupuesto total: ";
+    cin>>presupuesto;
+    presupuesto1=presupuesto*0.4;
+    cout<<"El area de Ginecologìa tiene un presupuesto de: "<<presupuesto1<<endl;
+    presupuesto2=presupuesto*0.3;
+    cout<<"El area de Traumatologia tiene un presupuesto de: "<<presupuesto2<<endl;
+    presupuesto3=presupuesto*0.3;
+    cout<<"El area de Pediatria tiene un presupuesto de: "<<presupuesto3<<endl;
+    
+    return 0;
+}
