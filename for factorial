@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    float factorial=1;
+    //pedir y validar valores
+    do
+    {
+        cout << "Ingrese el valor de n: " << endl;
+        cin >> n;
+    } while (n <= 0);
+    //un ciclo for
+    for (int i = 1; i <= n; i++) //inicializacion,condicion,incremento
+    {
+        factorial *= i;
+    }
+     
+    //mostrar los resultados
+    cout << endl << "el factorial de " << n << " es de : " << factorial << endl;
+
+
+
+    return 0;
+    
+}
