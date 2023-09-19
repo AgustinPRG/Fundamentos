@@ -1,0 +1,58 @@
+/*Calcular el interés  simple  que ganará un capital C en un periodo de N años, conociendo que la tasa de interés es T. 
+Suponer que el interés es pagadero por cada año y no es capitalizable.*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+ float C,N,T,InteresSimple,MontoTotal,InteresSimplet,MontoTotalt;
+ int n;
+ float suma=0;
+  do
+    {
+        cout <<"Ingresar la cantidad de operaciones a calcular: ";
+        cin >> n;
+        if (n < 0)
+        {
+            cout << "El valor de n debe ser mayor a 0" << endl;
+        }
+    } while (n < 0);
+
+ for (int i = 1; i <= n; i++)
+ {
+      do
+    {
+        cout <<"Ingresar el capital inicial: ";
+        cin >> C;
+        if (C < 0)
+        {
+            cout << "El valor de C debe ser mayor a 0" << endl;
+        }
+    } while (C < 0);
+     do
+    {
+        cout <<"Ingresar el numero de años: ";
+        cin >> N;
+        if (N < 0)
+        {
+            cout << "El valor de N debe ser mayor a 0" << endl;
+        }
+    } while (N < 0);
+         do
+    {
+        cout <<"Ingresar la tasa de interes: ";
+        cin >> T;
+        if (T < 0)
+        {
+            cout << "El valor de T debe ser mayor a 0" << endl;
+        }
+    } while (T < 0);
+    
+     InteresSimple=C*N*(T/100);
+     InteresSimplet=InteresSimplet+InteresSimple;
+     MontoTotal=C+InteresSimple;
+     MontoTotalt=MontoTotalt+MontoTotal;
+ }
+ cout<<"Interes simple total es:"<<InteresSimplet<<endl;
+ cout<<"Monto total de las operaciones es:"<<MontoTotalt<<endl;
+}
