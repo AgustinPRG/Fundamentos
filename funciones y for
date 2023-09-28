@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int calcularfactorial(int n){
@@ -23,19 +24,27 @@ int sumarnumerosnaturales(int n){
         return calcularfactorial(n)/sumarnumerosnaturales(n);
     }
 
+    int exponente(int base, int exponente){
+        return pow(base,exponente);
+    }
 
 int main()
 {
-    int n;
-    cout<<"Ingrese el numero que quiere calcular: ";
-    cin>>n;
+    int const INICIO = 1;
+    int x,sumaserie=0;
+    int terminos;
+    cout<<"Ingrese valor de x: ";
+    cin>>x;
+    cout<<"Cuantos terminos de la serie quiere calcular: ";
+    cin>>terminos;
+    cout<<endl;
     
-    cout<<"El factorial de "<<n<<" es: "<<calcularfactorial(n)<<endl;
+    for (int i = 1; i <= terminos; i++){
+        sumaserie = sumaserie + exponente(x,i)/calcularfactorial(i);
+    }
+    cout<<"La suma de la serie es: "<<sumaserie + INICIO;
     
-    int resultado = sumarnumerosnaturales(n);
-    cout<<"La suma es: "<<resultado<<endl;
     
-    cout<<"La division es: "<<division(n);
     
     return 0;
     
