@@ -2,8 +2,8 @@
 #include <math.h>
 using namespace std;
 
-int calcularfactorial(int n){
-    int fact = 1;
+float calcularfactorial(int n){
+    float fact = 1;
     for (int i=1; i <= n; i++)
     {
         fact=fact*i;
@@ -31,7 +31,8 @@ int sumarnumerosnaturales(int n){
 int main()
 {
     int const INICIO = 1;
-    int x,sumaserie=0;
+    int x;
+    float sumaserie=0;
     int terminos;
     cout<<"Ingrese valor de x: ";
     cin>>x;
