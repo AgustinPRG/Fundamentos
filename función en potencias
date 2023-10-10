@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int poten(int x, int y);
+
+int main()
+{
+    int x,y;
+    cout<<"Escribe la base: "<<endl;
+    cin>>x;
+    cout<<"Escribe el exponente: "<<endl;
+    cin>>y;
+    poten(x,y);
+    cout<<"La potencia es: "<<poten(x,y);
+    return 0;
+}
+
+int poten(int x, int y)
+{
+    int acum=1;
+    for(int i=1;i<=y;i++)
+    acum*=x;
+    return acum;
+}
