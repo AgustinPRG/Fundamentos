@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+//Agustin Parada-Emiliano Ribera
+
+void sistema(int a,int b,int c,int d,int e,int f, int &x, int &y);
+
+int main()
+{
+    int a,b,c,d,e,f,x,y;
+    cout<<"Ingrese el dato de a: ";
+    cin>>a;
+    cout<<"Ingrese el dato de b: ";
+    cin>>b;
+    cout<<"Ingrese el dato de c: ";
+    cin>>c;
+    cout<<"Ingrese el dato de d: ";
+    cin>>d;
+    cout<<"Ingrese el dato de e: ";
+    cin>>e;
+    cout<<"Ingrese el dato de f: ";
+    cin>>f;
+    sistema(a,b,c,d,e,f,x,y);
+    cout<<"El resultado de X es de: "<<endl<<x<<endl<<"El resultado de Y es de: "<<endl<<y;
+    return 0;
+}
+
+void sistema(int a,int b,int c,int d,int e,int f, int &x, int &y)
+{
+    y=(a*f-c*d)/(e*a-b*d);
+    x=(c-b*y)/a;
+}
